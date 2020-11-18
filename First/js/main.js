@@ -1,12 +1,21 @@
 jQuery(document).ready(function($){    
-
+    jQuery('[data-readmore]').readmore({
+      collapsedHeight: 757,
+      moreLink: '<a href="#">READ MORE..</a>'
+	  });
 
     // // faq
-    // $('[data-faq]').click(function(){
-    //   $(this).toggleClass('open');
-    //   $(this).find('.faq__card-help').toggleClass('open');
-    //   $(this).find('p').slideToggle(300);
-    // })
+    $('[data-faq]').click(function(){
+      $(this).find('.faq__title').toggleClass('open');
+      $(this).find('p').slideToggle(300);
+    })
+    // slide to id
+      $('[data-scroll]').on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
     // burger
 
     $('[data-burger]').click(function(){

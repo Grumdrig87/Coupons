@@ -22,6 +22,6 @@ jQuery(document).ready(function($){
       $('html').toggleClass("open");
       $(this).toggleClass("open");
       $('[data-nav]').toggleClass("open");
-      $('body').toggleClass('opened');
+      $('body').toggleClass('open');
     });
 })

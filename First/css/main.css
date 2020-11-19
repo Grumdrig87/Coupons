@@ -216,6 +216,7 @@ input {
 
 .header {
     padding: 64px 0 0;
+    position: relative;
 }
 .header__wrap {
     display: -webkit-box;
@@ -689,6 +690,7 @@ input {
     margin: 0 auto;
 }
 .faq__card {
+    cursor: pointer;
     padding: 34px 22px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -778,7 +780,7 @@ input {
 /* ---footer--- */
 
 .footer {
-    padding: 96px;
+    padding: 96px 0;
     background: #FCF8EF;
 }
 
@@ -813,7 +815,7 @@ input {
 
 /* ------COUPON----- */
 .coupoffer {
-    padding-bottom: 96px;
+    padding-bottom: 100px;
 }
 .coupoffer__title {
     margin-bottom: 48px;
@@ -851,7 +853,7 @@ input {
 }
 
 .coupoffer__logo {
-    width: 18%;
+    width: 21%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -882,7 +884,7 @@ input {
     opacity: 0.5;
 }
 .coupoffer__descr {
-    width: 44%;
+    width: 43%;
 }
 
 .coupoffer__txt {
@@ -893,4 +895,159 @@ input {
 
 .coupoffer__txt p:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.coupoffer__txt h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+.aboutus__txt {
+    margin-top: 64px;
+}
+
+/* ----contacts--- */
+
+.contacts {
+    background: #FCF8EF;
+    padding: 96px 0 100px;
+    border-bottom: 1px solid rgba(149,131,113,0.2);
+}
+
+.contacts__wrap {
+    max-width: 695px;
+    margin: 0 auto;
+}
+
+.contacts__header {
+    margin-bottom: 19px;
+    font-size: 22px;
+}
+.contacts__text {
+    margin-bottom: 40px;
+    line-height: 160%;
+}
+.contacts__text a {
+    color: #F2994A;
+    font-weight: 700;
+}
+
+.contacts__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.form__input-wrap {
+    width: 48%;
+}
+.form__input-wrap:not(:last-of-type) {
+    margin-bottom: 32px;
+}
+.form__textarea-wrap {
+    width: 100%;
+
+}
+.form__input-tit {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 5px;
+}
+.form__input {
+    background: #F3E7CC;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    width: 100%;
+    display: block;
+    resize: none;
+    font-size: 18px;
+    line-height: 160%;
+    padding: 10px;
+}
+
+.form__textarea-wrap .form__input,
+.form__textarea-wrap .form__input:focus {
+    outline: none;
+    border: none;
+}
+.form__textarea-wrap .form__input {
+    height: 96px;
+}
+.contacts__form button {
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px 32px;
+    letter-spacing: 0;
+}
+
+
+/* -------------404----------- */
+
+.nopage {
+    padding: 86px 0 293px;
+}
+.nopage__title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 16px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.nopage__title:after,
+.nopage__title::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url('../img/svg/stop.svg') no-repeat 0 0 / cover;
+}
+.nopage__title::before {
+    margin-right: 56px;
+}
+.nopage__title:after {
+    margin-left: 56px;
+}
+.nopage__titsm {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 150%;
+    margin-bottom: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.nopage p {
+    line-height: 170%;
+    margin-bottom: 59px;
+    text-align: center;
+}
+.nopage a {
+    padding: 20px 55px;
 }

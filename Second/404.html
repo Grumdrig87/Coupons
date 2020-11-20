@@ -77,7 +77,13 @@
             </div>
         </footer>
     </div>
-
+    <script>
+        jQuery(document).ready(function($) {
+            $("[data-nav] a").each(function(indx, element){
+                $(this).attr('href', '/'+$(this).attr('href'));
+            });
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/readmore/readmore.min.js"></script>
     <script src="js/main.js"></script>

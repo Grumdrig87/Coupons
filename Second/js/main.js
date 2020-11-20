@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){    
     jQuery('[data-readmore]').readmore({
-      collapsedHeight: 757,
-      moreLink: '<a href="#">READ MORE..</a>'
+      collapsedHeight: 800,
+      moreLink: '<a href="#">READ MORE</a>'
 	  });
 
     // // faq
@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
       $(this).find('p').slideToggle(300);
     })
     // slide to id
-      $('[data-scroll]').on("click","a", function (event) {
+      $('[data-nav]').on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -24,4 +24,6 @@ jQuery(document).ready(function($){
       $('[data-nav]').toggleClass("open");
       $('body').toggleClass('open');
     });
+
+
 })

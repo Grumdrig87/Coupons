@@ -27,10 +27,26 @@
             <div class="container">
                 <div class="header__wrap">
                     <a href="index.html" class="header__logo">
-                        Logo
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="43" fill="none" xmlns:v="https://vecta.io/nano"><path d="M8.036 29.586c-1.476-1.644-1.352-4.17.287-5.65l20.8-18.796c1.64-1.48 4.165-1.348 5.64.296l1.342 1.495c.738.822.576 2.12.388 3.2a3.01 3.01 0 0 0 .726 2.526 2.99 2.99 0 0 0 2.49.984c1.075-.094 2.337-.14 3.084.64L44.15 15.7c1.56 1.632 1.464 4.236-.212 5.75L23.045 40.32c-1.64 1.48-4.165 1.35-5.64-.295l-1.343-1.496c-.738-.822-.575-2.12-.387-3.21a3.01 3.01 0 0 0-.726-2.526 2.99 2.99 0 0 0-2.429-.989c-1.1.073-2.404.1-3.142-.722l-1.342-1.495z" fill="#fdf2ee"/><path d="M5.502 25.967c-1.327-1.766-.984-4.27.78-5.603L28.643 3.46c1.762-1.332 4.267-.98 5.594.786l1.208 1.608c.663.883.39 2.16.107 3.23a3.01 3.01 0 0 0 .504 2.58 2.99 2.99 0 0 0 2.395 1.198c1.08.001 2.34.064 3.016.907l1.22 1.522c1.412 1.762 1.09 4.347-.712 5.71l-22.45 16.97c-1.762 1.332-4.266.98-5.593-.786l-1.21-1.61c-.663-.883-.388-2.16-.107-3.23a3.01 3.01 0 0 0-.504-2.58 2.99 2.99 0 0 0-2.333-1.197c-1.103-.023-2.403-.11-3.067-.994l-1.208-1.608z" fill="#ffe0d6"/><use xlink:href="#D" fill="#ff7344"/><ellipse cx="29.983" cy="13.033" rx="1.999" ry="2.005" fill="#ffe9e1"/><mask id="A" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="40" height="35"><use xlink:href="#D" fill="#ff7344"/></mask><g mask="url(#A)"><path opacity=".2" d="M-32.365 9.112L-4.39 41.497S5.17 24.727 13.614 15.9c8.63-9.02 25.37-19.43 25.37-19.43l-19.62-19.747-51.727 32.39z" fill="url(#B)"/><path opacity=".15" d="M-23.424 25.172l33.813 26.19s6.06-18.336 12.595-28.665C29.664 12.14 44.016-1.388 44.016-1.388l-23.13-15.46-44.312 42.02z" fill="url(#C)"/></g><defs><linearGradient id="B" x1="-9.924" y1="-16.455" x2="19.577" y2="17.182" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient><linearGradient id="C" x1="-6.474" y1="-4.345" x2="29.079" y2="22.771" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient><path id="D" d="M1.995 21.638C.893 19.723 1.54 17.28 3.45 16.172L27.698 2.13a3.99 3.99 0 0 1 5.457 1.462l1.005 1.746c.55.957.123 2.193-.287 3.22a3.01 3.01 0 0 0 .187 2.622c.49.85 1.33 1.37 2.23 1.48 1.07.133 2.316.35 2.884 1.268L40.2 15.6c1.187 1.92.552 4.447-1.402 5.58L14.455 35.267a3.99 3.99 0 0 1-5.457-1.462L7.993 32.06c-.55-.957-.122-2.192.287-3.22a3.01 3.01 0 0 0-.187-2.622c-.478-.83-1.292-1.346-2.17-1.473-1.092-.158-2.372-.404-2.923-1.36l-1.005-1.746z"/></defs></svg>
+                        EssaysDiscounts
                     </a>
                     <nav class="header__nav" data-nav>
                         <ul>
+                            <li class="menu-item">
+                                <a href="#best">
+                                    Best Discounts!
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#about">
+                                    About coupons
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#help">
+                                    Help?
+                                </a>
+                            </li>
                             <li class="menu-item">
                                 <a href="about.html">
                                     About US
@@ -56,7 +72,7 @@
                     </a>
                 </span>
                 <span class="breadcrumbs__separator"> 
-                    
+                    /
                 </span>
                 <span class="breadcrumbs__current">
                     About Us
@@ -133,7 +149,13 @@
             </div>
         </footer>
     </div>
-
+    <script>
+        jQuery(document).ready(function($) {
+            $("[data-nav] a").each(function(indx, element){
+                $(this).attr('href', '/'+$(this).attr('href'));
+            });
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/readmore/readmore.min.js"></script>
     <script src="js/main.js"></script>

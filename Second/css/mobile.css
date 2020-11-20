@@ -219,6 +219,9 @@
        -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
 }
+.header__nav ul li:not(:last-child) {
+  margin-right: 0;
+}
 .main {
   padding: 94px 0;
 }
@@ -240,6 +243,32 @@
 .footer {
   padding: 50px 0;
 }
+.main__wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main__left,
+.main__right {
+  width: 100%;
+}
+.main__right {
+  padding-top: 76px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 }
 
 /* 577-768px */
@@ -249,10 +278,12 @@
   }
   .main,
   .best,
-  .about,
   .find,
   .faq {
     padding: 50px 0;
+}
+.about {
+  padding: 80px 0;
 }
 .best__card {
   -webkit-box-orient: vertical;
@@ -271,7 +302,6 @@
   padding-left: 0;
   border: none;
   text-align: center;
-  margin-bottom: 30px;
 }
 .about__text p {
   line-height: 20px;
@@ -322,9 +352,11 @@
 }
 .coupoffer__card {
   width: 70%;
+  margin: 0 auto;
+    padding: 20px;
 }
 .coupoffer {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 .coupoffer__txt p {
   font-size: 14px;
@@ -338,6 +370,25 @@
 }
 .nopage {
   padding: 86px 0;
+}
+.faq__title {
+  padding-right: 41px;
+}
+.best__btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.best__card {
+  padding: 0 24px 24px;
+}
+.breadcrumbs {
+  margin-top: 40px;
+}
+.faq {
+  padding: 91px 0;
 }
 }
 
@@ -360,12 +411,18 @@
 .title-l {
   font-size: 22px;
 }
-.main,
+
   .best,
-  .about,
-  .find,
-  .faq {
+  .find  {
     padding: 30px 0;
+}
+.main {
+  padding: 30px 0 50px;
+}
+
+.about,
+.faq {
+  padding: 70px 0;
 }
 .title__bot {
   font-size: 15px;
@@ -402,7 +459,7 @@
           justify-content: flex-start;
 }
 .find__card {
-  padding: 30px 15px;
+  padding: 0 15px 15px;
 }
 .find__card__btns .btn__sec {
   margin-right: 15px;
@@ -420,6 +477,9 @@
   padding-right: 25px;
   font-size: 13px;
 }
+.find__card-txt {
+  padding: 16px 0 0;
+}
 .footer__wrap {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -434,20 +494,13 @@
 }
 .breadcrumbs {
   margin: 39px 0 24px; 
-  -webkit-flex-wrap: wrap; 
-      -ms-flex-wrap: wrap; 
-          flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-       -moz-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+  text-align: left;
 }
 .coupoffer__card {
   width: 100%;
 }
 .coupoffer {
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 .contacts {
   padding: 30px 0;
@@ -467,7 +520,7 @@
   margin-bottom: 20px;
 }
 .nopage {
-  padding: 50px 0;
+  padding: 115px 0 150px;
 }
 .nopage__title {
   font-size: 80px;
@@ -490,5 +543,8 @@
   line-height: 160%;
   margin-bottom: 42px;
   font-size: 15px;
+}
+.find__card-logo {
+  padding: 27px 0;
 }
 }

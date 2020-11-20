@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){    
     jQuery('[data-readmore]').readmore({
-      collapsedHeight: 800,
+      collapsedHeight: 720,
       moreLink: '<a href="#">READ MORE</a>'
 	  });
 
@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
       $(this).find('p').slideToggle(300);
     })
     // slide to id
-      $('[data-nav]').on("click","a", function (event) {
+      $('[data-nav]').on("click","li:not(:last-child) a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
